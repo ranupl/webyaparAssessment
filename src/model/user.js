@@ -13,15 +13,13 @@ const userSchema = new mongoose.Schema(
     profile: {
         type: String,
     },
-    photos: [{
-        data: Buffer,
-        contentType: String,
-    }],
+    photos: {
+        type: Array,
+    }
   },
   { timestamps: true }
 );
 
-// we will create a new collection
 const UserDB = new mongoose.model("User", userSchema);
 
 module.exports = { UserDB };
