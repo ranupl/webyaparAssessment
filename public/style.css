@@ -1,3 +1,20 @@
-.back{
-    background-color: black;
+body{
+    background-color: rgb(209, 207, 207);
+}
+
+.bg-profile{
+    background-color: rgb(209, 207, 207);
+}
+
+.para{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+.profile{
+    border-radius: 50%;
+}
+
+.scroll{
+    overflow-x: scroll;
 }

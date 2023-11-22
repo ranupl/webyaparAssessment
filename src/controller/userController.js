@@ -11,6 +11,7 @@ async function logoutController(req, res) {
 async function uploadImageController(req, res) { 
     try {
         const email = req.user.email;
+        console.log(email, "not getting email");
         const user = await UserDB.findOne({email});
         if(user){
             user.photos.push(req.file.filename);

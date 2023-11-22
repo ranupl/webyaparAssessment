@@ -2,7 +2,6 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const { UserDB } = require('../model/user'); // Import your UserDB model
 
-async function passport_middleware() {
     passport.use(new GoogleStrategy({
         clientID: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
@@ -36,8 +35,7 @@ async function passport_middleware() {
             return done(error, null);
         }
     }));
-}
 
-module.exports = {passport_middleware};
+
 
 

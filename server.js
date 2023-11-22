@@ -15,7 +15,7 @@ app.use("/public", express.static(`${__dirname}/uploads`));
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.json());
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public/style"));
+app.use(express.static(__dirname + "/public"));
 
 app.use(
     session({
